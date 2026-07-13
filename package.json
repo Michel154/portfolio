@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "preinstall": "npm config set legacy-peer-deps true",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
