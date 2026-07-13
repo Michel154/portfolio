@@ -1,0 +1,43 @@
+/* index.css */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #0a192f;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    sans-serif;
+  color: white;
+
+  @media (min-width: 1025px) {
+    overflow: hidden;
+  }
+
+  @media (max-width: 1024px) {
+    overflow-y: auto;
+    height: auto;
+  }
+}
+
+html:has(#projects-page),
+body:has(#projects-page) {
+  overflow: auto !important;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
