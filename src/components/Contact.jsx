@@ -33,6 +33,7 @@ const Container = styled.div`
   @media (max-width: 1024px) {
     padding: 40px;
     gap: 20px;
+    justify-content: center;
   }
 
   @media (max-width: 768px) {
@@ -47,6 +48,11 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+    width: 100%;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -72,6 +78,7 @@ const Form = styled.form`
 
   @media (max-width: 1024px) {
     width: 100%;
+    max-width: 500px;
   }
 `;
 
@@ -115,15 +122,14 @@ const SuccessMessage = styled.p`
   font-weight: 500;
 `;
 
-const Right = styled.div`
+const MapWrapper = styled.div`
   flex: 1;
   height: 80%;
-  display: flex;
+  display: none;
   align-items: center;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    height: 300px;
+  @media (min-width: 1025px) {
+    display: flex;
   }
 `;
 
@@ -187,9 +193,9 @@ function Contact() {
             )}
           </Form>
         </Left>
-        <Right>
+        <MapWrapper>
           <Map />
-        </Right>
+        </MapWrapper>
       </Container>
 
       <Footer>

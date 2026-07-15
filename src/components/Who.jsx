@@ -41,7 +41,7 @@ const Left = styled.div`
   flex: 1;
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 800px;
     width: 100%;
   }
 `;
@@ -69,13 +69,8 @@ const Right = styled.div`
   @media (max-width: 768px) {
     align-items: center;
     text-align: center;
+    gap: 35px;
   }
-`;
-
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
 `;
 
 const Subtitle = styled.h2`
@@ -142,11 +137,11 @@ function Who() {
         </Left>
         <Right>
           <Title>ABOUT ME</Title>
-          <WhatWeDo>
-            <Subtitle>
-              A dedicated Front-End Developer, based in Stockholm, Sweden
-            </Subtitle>
-          </WhatWeDo>
+
+          <Subtitle>
+            A dedicated Front-End Developer, based in Stockholm, Sweden
+          </Subtitle>
+
           <Desc>
             I specialize in creating responsive and interactive web applications
             using modern technologies like React, JavaScript, HTML, and CSS. My

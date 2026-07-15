@@ -102,7 +102,7 @@ const Right = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    height: 300px;
+    height: 800px;
     width: 100%;
   }
 `;

@@ -158,7 +158,7 @@ const myProjects = [
     id: 2,
     title: "To-do list App",
     desc: "En enkel och användarvänlig to-do list app med convex backend som lagrar användarens uppgifter.",
-    tags: ["React", "Convex"],
+    tags: ["React", "TypeScript", "Convex"],
     image: "./img/todo-app.jpg",
     // github: "https://github.com/Michel154",
     live: "https://michels-todo-app.netlify.app/",

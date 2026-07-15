@@ -76,7 +76,7 @@ const Desc = styled.p`
   }
 `;
 
-const WhatWeDo = styled.div`
+const WhatIDo = styled.div`
   display: flex;
   align-items: center;
   gap: 15px;
@@ -84,7 +84,7 @@ const WhatWeDo = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 10px;
+    gap: 22px;
   }
 `;
 
@@ -201,7 +201,7 @@ function Hero() {
             Stockholm, Sweden
           </Desc>
 
-          <WhatWeDo>
+          <WhatIDo>
             <Subtitle>Tech Stack |</Subtitle>
             <TechIcons>
               <i className="fa-brands fa-react" title="React"></i>
@@ -213,7 +213,7 @@ function Hero() {
               <i className="fa-brands fa-angular" title="Angular"></i>
               <i className="fa-brands fa-figma" title="Figma"></i>
             </TechIcons>
-          </WhatWeDo>
+          </WhatIDo>
 
           <Socials>
             <a
