@@ -29,7 +29,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: auto;
     padding: 100px 20px 40px 20px;
     justify-content: center;
