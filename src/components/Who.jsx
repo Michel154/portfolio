@@ -29,7 +29,7 @@ const Container = styled.div`
   }
 
   @media (max-width: 768px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
     height: auto;
     padding: 100px 20px 40px 20px;
     justify-content: center;
@@ -41,7 +41,7 @@ const Left = styled.div`
   flex: 1;
 
   @media (max-width: 768px) {
-    height: 800px;
+    height: 680px;
     width: 100%;
   }
 `;
