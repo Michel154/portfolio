@@ -13,6 +13,7 @@ const Section = styled.div`
   @media (max-width: 768px) {
     height: auto;
     min-height: 100vh;
+    scroll-snap-align: none;
   }
 `;
 
@@ -37,6 +38,7 @@ const Container = styled.div`
     padding: 100px 20px 40px 20px;
     justify-content: center;
     gap: 40px;
+    scroll-snap-align: none;
   }
 `;
 
@@ -187,6 +189,7 @@ function Hero() {
   const handleLearnMore = () => {
     const aboutSection = document.getElementById("who");
     if (aboutSection) {
+     
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };

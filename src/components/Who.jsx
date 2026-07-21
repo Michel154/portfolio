@@ -11,7 +11,8 @@ const Section = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    min-height: 100vh;
+    min-height: auto;
+    scroll-snap-align: none;
   }
 `;
 
@@ -31,9 +32,10 @@ const Container = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     height: auto;
-    padding: 100px 20px 40px 20px;
+    padding: 20px 20px 60px 20px;
     justify-content: center;
-    gap: 30px;
+    gap: 15px;
+    scroll-snap-align: none;
   }
 `;
 

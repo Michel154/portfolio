@@ -17,8 +17,9 @@ const Section = styled.div`
 
   @media (max-width: 768px) {
     height: auto;
-    min-height: 100vh;
-    padding: 100px 20px 20px 20px;
+    min-height: auto;
+    
+    scroll-snap-align: none;
   }
 `;
 
@@ -30,16 +31,13 @@ const Container = styled.div`
   gap: 50px;
   align-items: center;
 
-  @media (max-width: 1024px) {
-    padding: 40px;
-    gap: 20px;
-    justify-content: center;
-  }
-
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 100px 20px 40px 20px;
+    padding: 20px 20px 40px 20px;
     height: auto;
+    justify-content: center;
+    gap: 20px;
+    scroll-snap-align: none;
   }
 `;
 
@@ -48,11 +46,6 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-
-  @media (max-width: 1024px) {
-    justify-content: center;
-    width: 100%;
-  }
 
   @media (max-width: 768px) {
     justify-content: center;
@@ -128,7 +121,7 @@ const MapWrapper = styled.div`
   display: none;
   align-items: center;
 
-  @media (min-width: 1025px) {
+  @media (min-width: 768px) {
     display: flex;
   }
 `;
