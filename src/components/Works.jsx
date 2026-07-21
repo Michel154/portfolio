@@ -94,6 +94,13 @@ const ListItem = styled.li`
         }
       }
     }
+      @media (max-width: 768px) {
+    color: #4e5cdaff;
+    -webkit-text-stroke: none; 
+    
+    &::after {
+      display: none !important; 
+    }
   }
 `;
 

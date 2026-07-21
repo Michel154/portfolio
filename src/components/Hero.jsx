@@ -189,7 +189,6 @@ function Hero() {
   const handleLearnMore = () => {
     const aboutSection = document.getElementById("who");
     if (aboutSection) {
-     
       aboutSection.scrollIntoView({ behavior: "smooth" });
     }
   };
