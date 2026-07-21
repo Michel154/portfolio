@@ -18,6 +18,8 @@ const Container = styled.div`
 
   overflow-y: auto;
 
+  font-family: sans-serif;
+
   @media (min-width: 1025px) {
     scroll-snap-type: y mandatory;
   }
